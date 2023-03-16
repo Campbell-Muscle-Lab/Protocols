@@ -1,0 +1,72 @@
+ pH  7.00   Temp.  25.0 C    (Ionic) 0.180 N   CM-I 0.085 N   CM-E 0.055 N    
+------------------------------------------------------------------------------
+ Chelator   ATP        CRPHOSP    EGTA                                        
+ Total      4.70E-03M  1.45E-02M  7.00E-03M                                   
+ Free       6.81E-04M  1.43E-02M  6.69E-03M                                   
+------------------------------------------------------------------------------
+ Metal      Ca2        Mg2                                                    
+ Total      1.60E-05M  5.51E-03M                                              
+ Free       1.00E-09M  1.00E-03M                                              
+------------------------------------------------------------------------------
+CHELATOR METAL COMPLEXES:
+            ATP        CRPHOSP    EGTA                                        
+ Ca2H       1.24E-11M  0.00E+00M  2.14E-08M                                   
+ Ca2        1.87E-09M  1.39E-10M  1.60E-05M                                   
+ Mg2H       1.81E-05M  0.00E+00M  2.52E-04M                                   
+ Mg2        4.00E-03M  1.96E-04M  4.21E-05M                                   
+------------------------------------------------------------------------------
+Final Mixed Constants adjusted for temp,(ionic)
+ Chelator   ATP        CRPHOSP    EGTA                                        
+    H1       6.32       4.62       9.24                                       
+    H2       3.87       2.78       8.67                                       
+    H3       0.92                  2.62                                       
+    H4       0.96                  1.87                                       
+Association Constants and Kd's adjusted for pH,temp,(ionic)
+ Metal     Ca2        Mg2                                                     
+ ATP-ML      3.44       3.77                                                  
+    -MHL     1.26       1.42                                                  
+   -Kd(M)   3.62E-04   1.70E-04                                               
+  buffer?  <<RANGE    > RANGE                                                 
+ CRPHOSP-ML  0.99       1.14                                                  
+    -MHL                                                                      
+   -Kd(M)   1.03E-01   7.31E-02                                               
+  buffer?  <<RANGE    <<RANGE                                                 
+ EGTA-ML     6.38       0.80                                                  
+    -MHL     3.50       1.57                                                  
+   -Kd(M)   4.18E-07   2.28E-02                                               
+  buffer?  <<RANGE    <<RANGE                                                 
+Free metal concentration must be in "GOOD" range for buffering to occur.
+Range is Kd/sqrt(10) to Kd*sqrt(10)69
+
+WINMAXC32 v2.50 using G:\Campbell_Lab_MaxChelator_28June2018\Constants\kens_cons
+Web site is: http://www.stanford.edu/~cpatton/maxc.html
+
+
+Ionic Strength is 0.085 M
+Desired Ionic Strength is 0.180
+
+20 mM Imidzaole contributes about 12 mM IS.
+Thus IS to be added be 0.180 - (0.085+0.012) = 0.083 M
+Allow 16 mM for pHing, thus KCl IS = 0.067 M
+
+IS = 0.5 * sum(conc_i*(valence_i)^2)
+For KCl IS = concentration
+
+Thus KCl = 0.067 M
+
+
+
+
+Final Solution is
+
+Compound             Concentration (M)
+EGTA                 0.00700
+Imidazole            0.02000
+KCl                  0.06700
+Creatine Phosphate   0.01450
+ATP                  0.00470
+CaCl2                1.60E-05
+MgCl2                0.00551
+
+
+180 mM IS, pH 7.0, pCa 9.0, 4 mM MgATP, 1 mM free Mg2+
